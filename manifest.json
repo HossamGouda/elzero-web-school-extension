@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Elzero Web Extension",
+  "version": "1.0",
+  "description": "Elzero web courses extension",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "https://elzerocourses.teachable.com/*",
+    "https://sso.teachable.com/secure/2109399/identity/login/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://elzerocourses.teachable.com/*"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://sso.teachable.com/secure/2109399/identity/login/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["darkmode.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}

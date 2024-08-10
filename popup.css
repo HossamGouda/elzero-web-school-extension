@@ -1,0 +1,157 @@
+:root {
+  --primary-dark: #232931;
+  /* mostly for background */
+  --secondary-dark: #393e46;
+  /* mostly for hover */
+  --primary-white: #eeeeee;
+  /* mostly for text */
+  --default-purple: #8e58d1;
+  /* default green color of Elzero Academy */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.elzero-container {
+  width: 320px;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup-dark-mode {
+  background-color: #393e46;
+  color: #fff;
+}
+
+.elzero-container .elzero-title {
+  text-align: center;
+  background: var(--default-purple);
+  padding: 12px 0;
+  color: #fff;
+}
+
+.popup-dark-mode .elzero-title {
+  background-color: #232931;
+}
+
+.feature-list {
+  padding: 12px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.popup-dark-mode .feature {
+  background-color: #232931;
+  border: 1px solid #232931;
+}
+
+.feature-list .feature-title {
+  font-size: 0.9rem;
+  color: #646d76;
+}
+
+.popup-dark-mode .feature-title {
+  color: #fff;
+}
+
+.toggle-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 19px;
+}
+
+.toggle-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #32de88;
+}
+
+.toggle-switch input:focus + .slider {
+  box-shadow: 0 0 1px #32de88;
+}
+
+.toggle-switch input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+.toggle-switch .slider.round {
+  border-radius: 34px;
+}
+
+.toggle-switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.elzero-footer {
+  font-size: 12px;
+  padding: 12px;
+  border-top: 1px solid #eeeeee;
+}
+
+.popup-dark-mode .elzero-footer {
+  background-color: #393e46;
+  border-top: 0.5px solid #eeeeee;
+}
+
+.elzero-footer .links {
+  margin-top: -8px;
+}
+
+.elzero-footer .links a {
+  color: blue;
+}
+
+.popup-dark-mode .links a {
+  color: #fff;
+}

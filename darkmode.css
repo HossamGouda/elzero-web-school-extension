@@ -1,0 +1,429 @@
+/* Dark Mode Styles */
+:root {
+  --primary-dark: #232931;
+  /* mostly for background */
+  --secondary-dark: #393e46 /* mostly for hover */;
+  --primary-white: #eeeeee;
+  /* mostly for text */
+  --defualt-purble: #8e58d1;
+  /* default green color of Elzero Academy */
+}
+
+/* ----- Start Home Page Dark Mode Section ----- */
+body,
+*:not(
+    .status-icon,
+    .bxs-heart,
+    .gravatar,
+    .primaryButton,
+    .secondaryButton,
+    .secondaryButtonInverse
+  ) {
+  background: var(--primary-dark) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-dark);
+  outline: 1px solid var(--primary-dark);
+}
+
+.navbar {
+  box-shadow: 0 1px 1px rgba(225, 225, 225, 0.1);
+}
+
+.dropdown-toggle {
+  outline: none !important;
+}
+
+.nav.navbar-nav > li .fedora-navbar-link:hover {
+  background: var(--primary-dark) !important;
+  color: var(--primary-white) !important;
+}
+
+.course-filter {
+  background: var(--secondary-dark) !important;
+}
+
+.course-filter * {
+  background: transparent !important;
+}
+
+.open > .dropdown-menu,
+.course-filter .dropdown-menu li a {
+  background: var(--secondary-dark) !important;
+}
+
+.course-filter .dropdown-menu li a:hover {
+  background: var(--primary-dark) !important;
+}
+
+.open > .dropdown-menu li a {
+  background: var(--secondary-dark) !important;
+}
+
+.open > .dropdown-menu li a:hover {
+  background: var(--primary-dark) !important;
+}
+
+.nav.navbar-nav > li .fedora-navbar-link {
+  background: transparent !important;
+}
+
+.fedora-navbar-link.active,
+.nav.navbar-nav > li .fedora-navbar-link:hover,
+.nav.navbar-nav > li .fedora-navbar-link:focus {
+  background: var(--secondary-dark) !important;
+}
+
+.navbar-fedora .navbar-collapse.in {
+  background: transparent !important;
+}
+
+.input-group-btn:last-child > .btn:hover,
+.input-group-btn:last-child > .btn:hover * {
+  background: var(--secondary-dark) !important;
+}
+
+.view-directory .course-listing {
+  border: 1px solid var(--secondary-dark) !important;
+  overflow: hidden;
+}
+
+.view-directory .course-listing:hover {
+  border: 0.5px solid var(--defualt-purble) !important;
+}
+
+.view-directory .course-listing:hover .course-listing-title {
+  color: var(--defualt-purble) !important;
+}
+
+#block-172676065
+  > section
+  > div.block__columns.b-172676065-content_width
+  > div
+  > a {
+  border: 1px solid var(--defualt-purble) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--defualt-purble) !important;
+}
+
+.progressbar {
+  background: var(--secondary-dark) !important;
+}
+
+.progressbar .progressbar-fill {
+  background: var(--primary-white) !important;
+}
+header,
+footer,
+a {
+  color: var(--defualt-purble) !important;
+}
+
+a:hover {
+  color: var(--defualt-purble) !important;
+  text-decoration: none !important;
+}
+
+button {
+  background-color: var(--primary-dark) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--secondary-dark) !important;
+}
+
+button:hover {
+  background-color: var(--secondary-dark) !important;
+}
+
+input,
+textarea {
+  background-color: var(--primary-dark) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--secondary-dark) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff !important;
+}
+
+table {
+  background-color: var(--primary-dark) !important;
+  color: #ffffff !important;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--secondary-dark) !important;
+  padding: 10px;
+}
+
+th {
+  background-color: var(--primary-dark) !important;
+}
+
+::placeholder {
+  color: #aaaaaa !important;
+}
+
+.card {
+  background-color: var(--primary-dark) !important;
+  border: 1px solid var(--secondary-dark) !important;
+  border: 2px solid var(--defualt-purble) !important;
+  border-radius: 7.5px !important;
+}
+
+.card-title,
+.card-text {
+  color: #ffffff !important;
+}
+
+.modal-content {
+  background-color: var(--primary-dark) !important;
+  color: #ffffff !important;
+}
+
+.dropdown-menu {
+  background-color: var(--primary-dark) !important;
+  color: #ffffff !important;
+}
+
+.dropdown-item {
+  color: #ffffff !important;
+}
+
+body
+  > div.view-school
+  > div
+  > div
+  > div.row.search
+  > div
+  > div.btn-group
+  > button {
+  color: #ffffff !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--secondary-dark) !important;
+}
+div#blocks
+  div.block__image-with-text__inner.block__image-with-text__text-wrapper.rich-text
+  > p {
+  color: #eee !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-dark) !important;
+  border-radius: 10px !important;
+  border: 3px solid var(--primary-dark) !important;
+}
+
+div#blocks div > a > div.featured-product-card__content > h4 {
+  color: #ffffff !important;
+}
+div#blocks div.block__featured-products__heading_text.rich-text > h3 > strong {
+  color: #eee !important;
+}
+
+div#blocks div > div.block__text-with-image-grid__column__body > p {
+  color: #eee !important;
+}
+
+section > div.block__columns.b-172676065-content_width > div > a {
+  color: #eee !important;
+}
+div#__next div.community > div > p {
+  color: #eee !important;
+}
+
+div#__next div.image-wrap,
+div#__next div > div > div > p {
+  color: #eee !important;
+}
+
+div.instructor,
+div.community,
+div.btn-branded > a,
+div#__next div > div.lectures > div,
+div#__next div.progress {
+  color: #eee !important;
+  border: 1px solid #eee !important;
+}
+
+div#__next div.btn-branded {
+  display: none;
+}
+div#__next div.progress > div {
+  background-color: #eee !important;
+}
+
+.progressbar {
+  background: var(--secondary-dark) !important;
+}
+
+div#__next div.progress > div > div,
+#__next
+  > div
+  > div
+  > div.jsx-4204861187.columns
+  > div
+  > div.jsx-1343021134.instructor
+  > div.jsx-1343021134.image-info
+  > div.jsx-1343021134.image-wrap {
+  background-color: var(--defualt-purble) !important;
+}
+
+div
+  > div
+  > div.jsx-4204861187.columns
+  > div
+  > div
+  > div.jsx-3137867545.lectures
+  > div
+  > svg,
+#__next
+  > div
+  > div
+  > div.jsx-4204861187.columns
+  > div
+  > div
+  > div.jsx-4255369697.section-header
+  > div
+  > svg {
+  color: var(--defualt-purble) !important;
+}
+
+/*course view styles*/
+.status-icon {
+  background-color: var(--defualt-purble) !important;
+  border: 1px solid var(--defualt-purble) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--defualt-purble) !important;
+}
+
+div#courseSidebar div.small.course-progress-percentage,
+div#courseSidebar div.row.lecture-sidebar > div > div {
+  color: #eee !important;
+}
+div#courseSidebar div.btn-branded {
+  display: none !important;
+}
+
+div#courseSidebar div.small.course-progress-percentage,
+div#courseSidebar div.small.course-progress-percentage > span {
+  background-color: #eee !important;
+  color: var(--defualt-purble) !important;
+}
+body > header > div.lecture-left > div > ul > li > span {
+  color: #eee !important;
+}
+input.custom-toggle-round:checked + label:after {
+  background: var(--defualt-purble) !important;
+  border: 1px solid var(--defualt-purble) !important;
+}
+input.custom-toggle-round:checked + label:before {
+  background: var(--defualt-purble) !important;
+  border: 1px solid var(--defualt-purble) !important;
+}
+div#new_comment_container div.comments__block-box__meta-name {
+  color: #eee !important;
+}
+textarea#comment_body {
+  border: 1px solid #eee !important;
+}
+
+form#new_comment_form > input.btn.btn-primary.pull-right.btn-md {
+  border: 1px solid #eee !important;
+}
+form#new_comment_form > input.btn.btn-primary.pull-right.btn-md:hover {
+  background-color: var(--defualt-purble) !important;
+}
+/*only courses styles */
+body > div.view-school > div > div > div.row.course-list.list > div > div {
+  border: 1px solid #eee !important;
+}
+div > div > div.row > a > div > div.course-listing-title,
+body
+  > div.view-school
+  > div
+  > div
+  > div.row.course-list.list
+  > div
+  > div
+  > div.course-listing-extra-info
+  > div
+  > div,
+div > div > div.row > a > div > div.course-listing-subtitle {
+  color: #eee !important;
+}
+
+div
+  > div
+  > div.row
+  > a
+  > div
+  > div.col-xs-12.course-listing-enrolled
+  > div
+  > div {
+  background: var(--defualt-purble) !important;
+}
+body
+  > div.view-school
+  > div
+  > div
+  > div.row.course-list.list
+  > div
+  > div:hover {
+  border: 1px solid var(--defualt-purble) !important;
+}
+
+/*No Login styles*/
+
+div#blocks div.block_curriculum_sections > section > div,
+#block-172107653
+  > div
+  > div
+  > div
+  > div.block_curriculum_sections
+  > section
+  > ul
+  > li
+  > a
+  > span.block__curriculum__section__list__item__lecture-name,
+#block-172107653
+  > div
+  > div
+  > div
+  > div.block_curriculum_sections
+  > section
+  > ul
+  > li
+  > a
+  > span.block__curriculum__section__list__item__lecture-duration {
+  color: var(--primary-white) !important;
+}
+
+#block-172107654 > section > div > form span,
+div {
+  color: var(--primary-white) !important;
+}
