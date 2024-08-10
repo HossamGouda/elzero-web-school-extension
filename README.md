@@ -12,7 +12,7 @@ This Chrome extension is developed for the students of Elzero Web School. It all
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/HossamGouda/elzero-web-school-extension.git
+   git clone <repository-url>
    ```
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" by toggling the switch in the top right corner.
@@ -56,9 +56,9 @@ The extension requires the following permissions:
 - `activeTab`: To interact with the current active tab.
 - Specific URLs: To apply content scripts on specified URLs.
 
-## Author
+## Future Features
 
-This project was developed by [Hossam Gouda](https://github.com/HossamGouda).
+We plan to add new features to enhance the functionality of this extension in the future. Stay tuned for updates!
 
 ## License
 
